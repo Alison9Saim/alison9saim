@@ -1,0 +1,19 @@
+{
+    "contactList": [
+        {
+            "Name": "Ali Saim",
+            "contactNumber": "416-720-8910",
+            "EmailAddress": "Alison.saim@gmail.com"
+        },
+        {
+            "Name": "Fernando Torres",
+            "contactNumber": "416-720-8910",
+            "EmailAddress": "Alison.saim@gmail.com"
+        },
+        {
+            "Name": "Steven Gerrard",
+            "contactNumber": "416-720-8910",
+            "EmailAddress": "Alison.saim@gmail.com"
+        }
+    ]
+}
