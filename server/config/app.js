@@ -17,14 +17,14 @@ mongoDB.on('error', console.error.bind(console, 'Connection Error: '));
 mongoDB.once('open', ()=> {
   console.log("Connected to MongoDB...");
 });
-
 mongoDB.once('disconnected', ()=> {
   console.log("Disconnected from MongoDB");
 });
 
 //Route Controllers
-
 let indexRouter = require('../routes/index');
+let contactRouter = require('../routes/contact');
+
 
 let app = express();
 
@@ -39,6 +39,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../../public')));
 
 app.use('/', indexRouter);
+app.use('/contact-list', contactRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
