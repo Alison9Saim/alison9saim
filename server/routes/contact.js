@@ -1,12 +1,19 @@
 let express = require('express');
 let router = express.Router();
-
-//contact contactsController
+// connect the contactsController
 let contactController = require('../controllers/contact');
-
-/* GEt Contact List page - READ Operations */
+/* GET Contact List page - READ Operation */
 router.get('/', contactController.displayContactList);
 
-/* GET request to perform the delte action */
+/* GET Route to display the Add page */
+router.get('/add', contactController.displayAddPage);
+
+/* POST Route to process the Add page */
+router.post('/add', contactController.processAddPage);
+
+
+
+/* GET request to perform the delete action */
 router.get('/delete/:id', contactController.performDelete);
+
 module.exports = router;
