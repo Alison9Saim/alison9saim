@@ -36,6 +36,16 @@
                     required>
                 </div>
 
+                 <div class="form-group">
+                    <label for="ContactEmailTextField">Contact Email</label>
+                    <input type="email" class="form-control" 
+                    id="ContactEmailTextField" 
+                    placeholder="Enter Contact Email"
+                    name="contactEmail" 
+                    value="<%= contact.contactEmail %>"
+                    required>
+                </div>
+
                 <button class="btn btn-primary" type="submit">
                     <i class="fas fa-edit"></i> <%= title %></button>
                 <a href="/contact-list" class="btn btn-warning">

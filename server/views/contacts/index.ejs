@@ -1,11 +1,10 @@
-<% include ../partials/head.ejs %>
-<% include ../partials/header.ejs %>
+<%- include ../partials/head.ejs %>
+<%- include ../partials/header.ejs %>
 
 <div class="container">
     <div class="row">
         <div class="col-md-offset-2 col-md-8">
             <h1> <%= title %> </h1>
-
             <a href="/contact-list/add" class="btn btn-primary">
                 <i class="fas fa-plus-circle"> Add a Contact</i></a>
             <br>
@@ -15,6 +14,7 @@
                     <th class="text-center">First name</th>
                     <th class="text-center">Last Name</th>
                     <th class="text-center">Contact Number</th>
+                     <th class="text-center">Contact Email</th>
                     <th class="text-center"></th>
                     <th class="text-center"></th>
                 </tr>
@@ -25,6 +25,7 @@
                     <td class="text-center"> <%= contactList[count].firstName %> </td>
                     <td class="text-center"> <%= contactList[count].lastName %> </td>
                     <td class="text-center"> <%= contactList[count].contactNumber %> </td>
+                    <td class="text-center"> <%= contactList[count].contactEmail %> </td>
                     <td class="text-center">
                      <a href="/contact-list/edit/<%= contactList[count]._id %>"
                         class="btn btn-primary"> <i class="fas fa-pencil-alt"></i> Edit</a>

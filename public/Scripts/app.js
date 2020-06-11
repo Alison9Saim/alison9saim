@@ -1,3 +1,5 @@
+import { displayQuestionList } from "../../server/controllers/question";
+
 class Contact
 {
     constructor(contactName = "", emailAddress = "", contactNumber = "", contactMessage = "")
