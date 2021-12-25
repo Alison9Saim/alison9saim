@@ -11,7 +11,7 @@ let DB = require('./db');
 
 //point Mongoose to the DB URI
 mongoose.connect(DB.URI,{useNewUrlParser: true, useUnifiedTopology: true});
-
+/*
 let mongoDB = mongoose.connection;
 mongoDB.on('error', console.error.bind(console, 'Connection Error: '));
 mongoDB.once('open', ()=> {
@@ -20,7 +20,7 @@ mongoDB.once('open', ()=> {
 mongoDB.once('disconnected', ()=> {
   console.log("Disconnected from MongoDB");
 });
-
+*/
 //Route Controllers
 let indexRouter = require('../routes/index');
 let contactRouter = require('../routes/contact');
